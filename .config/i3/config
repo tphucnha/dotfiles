@@ -138,6 +138,7 @@ assign [class="(?i)terminal"] $ws2
 assign [class="(?i)chrome"] $ws3
 assign [class="(?i)firefox"] $ws4
 assign [class="(?i)spotify"] $ws10
+assign [class="(?i)rhythmbox"] $ws10
 assign [class="(?i)telegram"] $ws9
 assign [class="(?i)rambox"] $ws9
 assign [class="(?i)skype"] $ws9

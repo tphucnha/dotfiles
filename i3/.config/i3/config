@@ -97,8 +97,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: IDE"
-set $ws2 "2: Teminal"
+set $ws1 "1: Terminal"
+set $ws2 "2: IDE"
 set $ws3 "3: Chrome"
 set $ws4 "4: Firefox"
 set $ws5 "5: ?"
@@ -133,8 +133,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Assign applications to appropriate workspaces
-assign [class="(?i)idea"] $ws1
-assign [class="(?i)terminal"] $ws2
+assign [class="(?i)idea"] $ws2
+assign [class="(?i)terminal"] $ws1
 assign [class="(?i)chrome"] $ws3
 assign [class="(?i)firefox"] $ws4
 assign [class="(?i)spotify"] $ws10
@@ -201,8 +201,22 @@ bindsym Mod1+l exec i3lock
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 #GNOME Settings Daemon
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+#exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #GNOME power manager
-exec_always --no-startup-id gnome-power-manager
+#exec_always --no-startup-id gnome-power-manager
 #GNOME Flashback
-exec --no-startup-id gnome-flashback
+#exec --no-startup-id gnome-flashback
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+
+

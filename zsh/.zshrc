@@ -102,4 +102,3 @@ alias dnfremove="sudo dnf remove"
 alias dnfupdate="sudo dnf update"
 alias vi="vim"
 alias lla="ls -la"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/.git/ --work-tree=$HOME/dotfiles/'

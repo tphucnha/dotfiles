@@ -117,7 +117,7 @@ set $ws4 "4: Firefox"
 set $ws5 "5: ?"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 "8: VM"
 set $ws9 "9: Chat"
 set $ws10 "10: Music"
 
@@ -146,15 +146,16 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Assign applications to appropriate workspaces
-assign [class="(?i)idea"] $ws2
 assign [class="(?i)terminal"] $ws1
+assign [class="(?i)idea"] $ws2
 assign [class="(?i)chrome"] $ws3
 assign [class="(?i)firefox"] $ws4
-assign [class="(?i)spotify"] $ws10
-assign [class="(?i)rhythmbox"] $ws10
+assign [class="(?i)virtualbox"] $ws8
 assign [class="(?i)telegram"] $ws9
 assign [class="(?i)rambox"] $ws9
 assign [class="(?i)skype"] $ws9
+assign [class="(?i)spotify"] $ws10
+assign [class="(?i)rhythmbox"] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

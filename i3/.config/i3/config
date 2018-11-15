@@ -116,7 +116,7 @@ set $ws3 "3: Chrome"
 set $ws4 "4: Firefox"
 set $ws5 "5: ?"
 set $ws6 "6"
-set $ws7 "7"
+set $ws7 "7: Files"
 set $ws8 "8: VM"
 set $ws9 "9: Chat"
 set $ws10 "10: Music"
@@ -150,6 +150,7 @@ assign [class="(?i)terminal"] $ws1
 assign [class="(?i)idea"] $ws2
 assign [class="(?i)chrome"] $ws3
 assign [class="(?i)firefox"] $ws4
+assign [class="(?i)nautilus"] $ws7
 assign [class="(?i)virtualbox"] $ws8
 assign [class="(?i)telegram"] $ws9
 assign [class="(?i)rambox"] $ws9
@@ -190,6 +191,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+x workspace $ws7; exec nautilus
+bindsym $modShift+x workspace $ws7; exec nautilus -w
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

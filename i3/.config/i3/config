@@ -133,6 +133,10 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+# Default output for workspaces
+workspace "1: Terminal" output LVDS-1
+workspace "9: Chat" output VGA-1
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
@@ -214,8 +218,8 @@ exec telegram-desktop
 bindsym Mod1+l exec i3lock
 
 # File manager shortkey
-bindsym $mod+x workspace $ws7; exec nautilus
-bindsym $mod+Shift+x workspace $ws7; exec nautilus -w
+bindsym $mod+x workspace $ws6; exec nautilus
+bindsym $mod+Shift+x workspace $ws6; exec nautilus -w
 
 # Screenshot shortkey
 bindsym Print exec --no-startup-id gnome-screenshot

@@ -29,13 +29,13 @@ ipv6 {
 }
 
 wireless _first_ {
-        format_up = ": %essid %ip"
+        format_up = "%essid %ip"
         format_down = ""
 }
 
 ethernet _first_ {
         # if you use %speed, i3status requires root privileges
-        format_up = "E: %ip (%speed)"
+        format_up = "%ip (%speed)"
         format_down = ""
 }
 
@@ -44,14 +44,14 @@ battery all {
         hide_seconds = true
         format_down = "BAT"
         status_chr = "⚡"
-        status_bat = "🔋"
+        status_bat = ""
         status_unk = "UNK"
         status_full = "FULL"
         low_threshold = 10
 }
 
 tztime local {
-        format = "%a %m-%d-%Y %H:%M"
+        format = "%a %d-%m-%Y %H:%M"
 }
 
 load {
@@ -73,8 +73,8 @@ cpu_temperature 0 {
 }
 
 volume master {
-        format = "♪: %volume"
-        format_muted = ": (%volume)"
+        format = "%volume"
+        format_muted = "(%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0

@@ -63,7 +63,7 @@ disk "/" {
 }
 
 cpu_usage {
-        format = "CPU: %usage"
+        format = "CPU %usage"
         separator = false
 }
 

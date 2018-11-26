@@ -65,6 +65,7 @@ plugins=(
   docker-compose
   wp-cli
   mvn
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh

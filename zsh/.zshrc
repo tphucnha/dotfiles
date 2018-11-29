@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export JAVA_HOME=/usr/java/latest
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -60,6 +62,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  git-flow
   docker
   docker-machine
   docker-compose
@@ -103,3 +106,6 @@ alias dnfremove="sudo dnf remove"
 alias dnfupdate="sudo dnf update"
 alias vi="vim"
 alias lla="ls -la"
+alias zshconfig="vi ~/.zshrc"
+alias i3config="vi ~/.config/i3/config"
+alias i3statusconfig="vi ~/.config/i3status/config"

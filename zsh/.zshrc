@@ -109,3 +109,4 @@ alias lla="ls -la"
 alias zshconfig="vi ~/.zshrc"
 alias i3config="vi ~/.config/i3/config"
 alias i3statusconfig="vi ~/.config/i3status/config"
+alias clr=clear

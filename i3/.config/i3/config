@@ -120,7 +120,7 @@ set $ws6 "6: Files"
 set $ws7 "7: RD"
 set $ws8 "8: VM"
 set $ws9 "9: Chat"
-set $ws10 "10: Music"
+set $ws10 "10: Inbox"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -160,10 +160,8 @@ assign [class="(?i)teamviewer"] $ws7
 assign [class="(?i)anydesk"] $ws7
 assign [class="(?i)virtualbox"] $ws8
 assign [class="(?i)telegram"] $ws9
-assign [class="(?i)rambox"] $ws9
 assign [class="(?i)skype"] $ws9
-assign [class="(?i)spotify"] $ws10
-assign [class="(?i)rhythmbox"] $ws10
+assign [class="(?i)rambox"] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

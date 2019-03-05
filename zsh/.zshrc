@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dnfinstall="sudo dnf install"
 alias dnfremove="sudo dnf remove"
-alias dnfupdate="sudo dnf update"
+alias dnfupdate="sudo dnf update -y"
 alias vi="vim"
 alias lla="ls -la"
 alias zshconfig="vi ~/.zshrc"

@@ -245,5 +245,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 #Screen layout
-bindsym $mod+Shift+s exec --no-startup-id xrandr --output VGA-1 --auto --right-of LVDS-1
+bindsym $mod+Shift+S exec --no-startup-id xrandr --output VGA-1 --auto --right-of LVDS-1
+bindsym $mod+Shift+D exec --no-startup-id xrandr --output VGA-1 --auto --same-as LVDS-1
 

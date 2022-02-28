@@ -17,6 +17,7 @@ order += "ipv6"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "memory"
+order += "battery all"
 order += "cpu_usage"
 order += "cpu_temperature 0"
 #order += "load"
@@ -39,9 +40,19 @@ ethernet _first_ {
         format_down = ""
 }
 
+battery all {
+        format = "%status %percentage %remaining (%consumption)"
+        hide_seconds = true
+        format_down = "BAT"
+        status_chr = "⚡"
+        status_bat = ""
+        status_unk = "UNK"
+        status_full = "FULL"
+        low_threshold = 10
+}
+
 tztime local {
         format = "%a %d-%m-%Y %H:%M"
-        timezone = "Asia/Ho_Chi_Minh"
 }
 
 load {
@@ -49,9 +60,9 @@ load {
 }
 
 memory {
-        format = "MEM %used / %total"
-        threshold_degraded = "10%"
-        format_degraded = "MEMORY: %free"
+	format = "MEM %used / %total"
+	threshold_degraded = "10%"
+	format_degraded = "MEMORY: %free"
 }
 
 disk "/" {

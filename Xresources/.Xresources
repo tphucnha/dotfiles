@@ -1,12 +1,12 @@
-*font: xft:monospace-14
-*boldFont: xft:monospace-14
+*font: xft:monospace-12
+*boldFont: xft:monospace-12
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
 
 Xcursor.theme: whiteglass
-Xcursor.size: 14
+Xcursor.size: 12
 
 ! gcolor2/3: Color selector.
 xterm.background: #262626

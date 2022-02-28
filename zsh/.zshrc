@@ -68,6 +68,7 @@ plugins=(
   docker-compose
   wp-cli
   mvn
+  kubectl
   zsh-autosuggestions
 )
 
@@ -106,6 +107,7 @@ alias dnfremove="sudo dnf remove"
 alias dnfupdate="sudo dnf update -y"
 alias vi="vim"
 alias lla="ls -la"
+alias sshconfig="vi ~/.ssh/config"
 alias zshconfig="vi ~/.zshrc"
 alias i3config="vi ~/.config/i3/config"
 alias i3statusconfig="vi ~/.config/i3status/config"

@@ -1,0 +1,24 @@
+*font: xft:monospace-14
+*boldFont: xft:monospace-14
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+Xcursor.theme: whiteglass
+Xcursor.size: 14
+
+! gcolor2/3: Color selector.
+xterm.background: #262626
+xterm.foreground: #ffffff
+
+URxvt*.transparent: true
+URxvt*.shading: 60
+URxvt.background: #262626
+URxvt.foreground: #ffffff
+URxvt.xftAntialias: true
+URxvt.scrollBar: False
+URxvt.scrollstyle: plain
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt.iso14755: False

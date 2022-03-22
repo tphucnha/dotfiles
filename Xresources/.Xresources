@@ -8,14 +8,22 @@ Xft.hintstyle: hintslight
 Xcursor.theme: whiteglass
 Xcursor.size: 12
 
-! gcolor2/3: Color selector.
-xterm.background: #262626
-xterm.foreground: #ffffff
+! Color
+URxvt.color1: #C0392B
+URxvt.color2: #11D116
+URxvt.color3: #FDBC4B
+URxvt.color4: #1D99F3
+URxvt.color7: #999999
+URxvt.depth: 32
+URxvt.background: [60]#232629
+URxvt.foreground: #FCFCFC
+URxvt.cursorColor: #7F8C8D
+URxvt.pointerColor: #000000
+URxvt.pointerColor2: #999999
+
 
 URxvt*.transparent: true
 URxvt*.shading: 60
-URxvt.background: #262626
-URxvt.foreground: #ffffff
 URxvt.xftAntialias: true
 URxvt.scrollBar: False
 URxvt.scrollstyle: plain
